@@ -1,0 +1,56 @@
+{
+  "policy_version": "2026.11-1",
+  "currency": "CNY",
+  "loaded_hourly_cost_cny": 360,
+  "annualization_months": 12,
+  "default_period_months": 3,
+  "default_budget_cny": 120000,
+  "default_group_capacity": 18,
+  "capacity_by_group": {
+    "SH-00": 18,
+    "SH-01": 18,
+    "SH-02": 18,
+    "SH-03": 18,
+    "SH-04": 18,
+    "SH-05": 18,
+    "SH-06": 18
+  },
+  "assumed_reduction_rate": {
+    "conservative": 0.05,
+    "base": 0.15,
+    "optimistic": 0.30
+  },
+  "evidence_confidence": {
+    "observed": 0.85,
+    "partial": 0.55,
+    "conflicted": 0.30,
+    "missing_baseline": 0.20,
+    "no_measurement": 0.15,
+    "invalid": 0.0
+  },
+  "governance_factor": {
+    "approved": 1.0,
+    "limited": 0.65,
+    "revise": 0.20,
+    "none": 0.0
+  },
+  "owner_factor": {
+    "sponsor-confirmed": 1.0,
+    "proposed": 0.5,
+    "paused": 0.2,
+    "unknown": 0.0
+  },
+  "readiness_factor": {
+    "ready": 1.0,
+    "partial": 0.6,
+    "blocked": 0.0,
+    "unknown": 0.0
+  },
+  "budget_sensitivity_multipliers": [0.5, 0.75, 1.0, 1.25, 1.5],
+  "selection": {
+    "require_owner_confirmed": true,
+    "require_governance_not_revise": true,
+    "require_no_blocked_dependency": true,
+    "require_unreleased_funding": true
+  }
+}
